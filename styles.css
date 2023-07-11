@@ -16,7 +16,7 @@ header {
     position: sticky;
     border-radius: 25px;
     border: 2px #C46D5E solid;
-
+margin: auto;
 }
 nav {
     text-decoration: none;
@@ -63,6 +63,7 @@ h1 {
     border: 2px #C46D5E solid;
     border-radius: 25px;
     padding: 5px;
+    margin: 1.25%;
 }
 .ordercontainer {
     display: flex;
