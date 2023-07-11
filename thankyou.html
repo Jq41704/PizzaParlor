@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--
+    Author: Jaren Quintana
+    Date: 7/7
+    Filename: thankyou.html
+   Assignment : Cheech's Flexible Pizza Parlor
+   -->
+  <meta charset="utf-8">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Thank You!</title>
+</head>
+
+<body>
+  <header>
+    <h1>Cheech's Pizza Parlor</h1>
+    <nav>
+      <a href="">Home</a>            
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order Online</a>
+      <a href="">Our Locations</a>
+  </nav>
+</header>
+  <div class="container">
+    <h2>Thank you for choosing Cheech's Pizza Parlor!<br>
+      Your order has been recieved, and is being processed now.</h2>
+
+    <script>
+      printQuery();
+    </script>
+  </div>
+  <footer>
+    <h5>Cheech's Pizza Parlor &copy; - All rights reserved.</h5>
+</footer>
+</body>
+
+</html>

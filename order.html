@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Author: Jaren Quintana
+        Date: 7/7
+        Filename: order.html
+        Assignment: Cheech's Flexible Pizza Parlor
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/55c487935d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cheech's Pizza Parlor</h1>
+        <nav>
+            <a href="">Home</a>            
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order Online</a>
+            <a href="">Our Locations</a>
+        </nav>
+    </header>
+    <form method="get" action="thankyou.html">
+        <div class="ordercontainer">
+            <div class="column1">
+                <label for="fname">
+                    Name:
+                    <input autofocus type="text" name="fname" required id="fname" placeholder="First Name">
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" required id="lname" placeholder="Last Name">
+                </label>
+                <label for="phonenumber">
+                    Phone Number:
+                    <input type="tel" name="phonenumber" required id="phonenumber" placeholder="Phone Number">
+                </label>
+                <label for="pizzaselection">
+                    Select a Pizza:
+                    <select id="pizzaselection" name="pizzaselection">
+                        <option value="Cheese Pizza">Cheese Pizza</option>
+                        <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+                        <option value="Supreme Pizza">Supreme Pizza</option>
+                        <option value="Veggie Pizza">Veggie Pizza</option>
+                        <option value="Meat Lover's Pizza">Meat Lover's Pizza</option>
+                        <option value="Hawaiian Chicken Pizza">Hawaiian Chicken Pizza</option>
+                    </select>
+                </label>
+                <label for="numofpizzas">
+                    <input type="number" name="numofpizzas" required id="numofpizzas" placeholder=" Number of Pizzas">
+                </label>
+                <input class="placeorder" type="submit" value="Place order">
+            </div>
+            <div class="column2">
+                <div class="review">
+                    <img class="image" src="img/IMG-4781-1.jpg.webp" alt=" Keith Lee Pizza">
+                    <p>One of the best pizza slices I've had. 11/10
+                        <br>- Keith Lee.
+                    </p>
+                </div>
+                <div class="socials">
+                    <p>Our Socials:</p>
+                    <div class="socialmedia">
+                        <i class="fa-brands fa-instagram"></i>                        <a href="">Instagram</a>
+                    </div>
+                    <div class="socialmedia">
+                        <i class="fa-brands fa-facebook"></i>                        <a href="">Facebook</a>
+                    </div>
+                    <div class="socialmedia">
+                        <i class="fa-brands fa-twitter"></i>                        <a href="">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <h5>Cheech's Pizza Parlor &copy; - All rights reserved.</h5>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+/*Author: Jaren Quintana
+Date: 7/7
+Filename: styles.css
+Assignment : Cheech's Flexible Pizza Parlor
+*/
+body {
+    color: #F56960;
+    text-align: center;
+    font-size: 150%;
+    background-color: #F3C98B;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+    flex: 100%;
+    background-color: #9cf6f6;
+    position: sticky;
+    border-radius: 25px;
+    border: 2px #C46D5E solid;
+
+}
+nav {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer {
+    position: relative;
+    bottom: -150px;
+    padding: 5px;
+    text-decoration: overline;
+    background-color: #9cf6f6;
+    border-radius: 25px;
+    border: 2px #C46D5E solid;
+}
+p {
+    padding: 10px;
+    margin: 2.5px;
+}
+h1 {
+    margin: auto;
+}
+.image {
+    width: 100%;
+    border-radius: 25px;
+
+}
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pizza {
+    background-color: #9cf6f6;
+    border: 2px #C46D5E solid;
+    border-radius: 25px;
+    padding: 5px;
+    flex: 25%;
+    margin: 1.25%;
+}
+.container{
+    background-color: #9cf6f6;
+    border: 2px #C46D5E solid;
+    border-radius: 25px;
+    padding: 5px;
+}
+.ordercontainer {
+    display: flex;
+    justify-content: space-around;
+
+}
+.placeorder {
+    border-radius: 50px;
+}
+.column1 {
+    background-color: #9cf6f6;
+    border: 2px #C46D5E solid;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 2.5px;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}.column2 {
+
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.review{
+    background-color: #9cf6f6;
+    border: 2px #C46D5E solid;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 2.5px;
+    display: flex;
+    flex-direction: column;
+}
+.socials {
+    background-color: #9cf6f6;
+    border: 2px #C46D5E solid;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 2.5px;
+    display: flex;
+    flex-direction: column;
+}
+.socialmedia {
+    flex-direction: row;
+}
+@media screen and (max-width: 568px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .choices {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 578px) {
+    .ordercontainer {
+        flex-direction: column;
+    }
+
+}
